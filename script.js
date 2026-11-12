@@ -1,6 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // --- 1. MODAL & AUTO-SLIDESHOW DI DALAM MODAL ---
+    // --- 1. THEME SWITCHER (DARK / LIGHT MODE) ---
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = themeToggleBtn.querySelector('i');
+    
+    // Cek apakah user sebelumnya pernah memilih tema terang
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme === 'light') {
+        document.body.classList.add('light-mode');
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('light-mode');
+        const isLight = document.body.classList.contains('light-mode');
+        
+        // Ubah ikon matahari/bulan dan simpan ke memori browser
+        if (isLight) {
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+            localStorage.setItem('portfolio-theme', 'light');
+        } else {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+            localStorage.setItem('portfolio-theme', 'dark');
+        }
+    });
+
+    // --- 2. MODAL & AUTO-SLIDESHOW DI DALAM MODAL ---
     const modalTriggers = document.querySelectorAll('.modal-trigger');
     const closeButtons = document.querySelectorAll('.modal-close');
     const modals = document.querySelectorAll('.modal');
@@ -55,7 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Inisialisasi properti Carousel Modal
     const carousels = document.querySelectorAll('.modal-carousel');
     carousels.forEach(carousel => {
         const track = carousel.querySelector('.carousel-track');
@@ -123,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
         startAutoSlide(modal);
     }
 
-    // --- 2. THUMBNAIL AUTO-SLIDESHOW (DI HALAMAN UTAMA) ---
+    // --- 3. THUMBNAIL AUTO-SLIDESHOW (DI HALAMAN UTAMA) ---
     const thumbnailCarousels = document.querySelectorAll('.thumbnail-carousel');
     
     thumbnailCarousels.forEach(carousel => {
