@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Ruben Setiaji - Web Developer & Data Analyst">
+    <title>Ruben Setiaji - Portfolio</title>
+    
+    <!-- Font Inter & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Ruben<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div class="badge">Tersedia untuk peluang baru</div>
+                <h1>Membangun sistem <span>enterprise</span> dengan data dan kode.</h1>
+                <p>Saya Ruben Setiaji. Web Developer & Data Analyst yang memadukan wawasan bisnis strategis dengan keahlian rekayasa perangkat lunak dan Machine Learning.</p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary">Lihat Proyek</a>
+                    <a href="CV_Ruben_Setiaji.pdf" download="CV_Ruben_Setiaji.pdf" class="btn btn-outline"><i class="fa-solid fa-file-arrow-down"></i> Unduh CV</a>
+                </div>
+            </div>
+            <div class="hero-img-wrapper">
+                <img src="img/profil.jpg" alt="Ruben Setiaji" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Latar Belakang</h2>
+            <div class="about-content">
+                <p>Sebagai mahasiswa <strong>Teknik Informatika Universitas Tarumanagara</strong>, saya berdedikasi menciptakan solusi teknologi yang efisien dan digerakkan oleh data. Pengalaman kepemimpinan saya di Sandination Academy membuktikan kemampuan saya dalam mengoordinasikan tim teknis sekaligus membangun platform digital berskala besar (LMS).</p>
+                <p>Fokus saya adalah menjembatani pengembangan web fungsional dengan analisis data yang tajam guna mendukung keputusan bisnis yang tepat sasaran.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Keahlian Teknis</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3><i class="fa-solid fa-code"></i> Pengembangan Web</h3>
+                    <div class="skill-tags">
+                        <span>PHP</span><span>Laravel</span><span>React.js</span><span>Node.js</span><span>Bootstrap</span><span>WordPress</span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h3><i class="fa-solid fa-brain"></i> Data & Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span>Python</span><span>Flask</span><span>Scikit-Learn (SVR)</span><span>MySQL</span><span>K-Means Clustering</span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h3><i class="fa-solid fa-microchip"></i> AI & Integrasi</h3>
+                    <div class="skill-tags">
+                        <span>AI-Assisted Development</span><span>Prompt Engineering</span><span>Code Optimization</span><span>Web Scraping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Proyek Unggulan</h2>
+            <div class="portfolio-grid">
+                
+                <!-- Proyek 1 -->
+                <article class="card">
+                    <div class="card-thumbnail thumbnail-carousel">
+                        <img src="img/Screenshot (1374).png" class="thumb-slide active" alt="AI Gold 1" loading="lazy">
+                        <img src="img/Screenshot (1375).png" class="thumb-slide" alt="AI Gold 2" loading="lazy">
+                        <img src="img/Screenshot (1376).png" class="thumb-slide" alt="AI Gold 3" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">AI Gold Price Predictor</h3>
+                        <p class="card-tech">Python, Flask, Scikit-Learn (SVR)</p>
+                        <p class="card-desc">Sistem Pendukung Keputusan (DSS) prediksi harga emas dengan akurasi 93% dan kalkulator profit cerdas.</p>
+                        <button class="btn btn-link modal-trigger" data-target="modal-1">Jelajahi Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- Proyek 2 -->
+                <article class="card">
+                    <div class="card-thumbnail thumbnail-carousel">
+                        <img src="img/Screenshot (1380).png" class="thumb-slide active" alt="CRM Sales 1" loading="lazy">
+                        <img src="img/Screenshot (1381).png" class="thumb-slide" alt="CRM Sales 2" loading="lazy">
+                        <img src="img/Screenshot (1384).png" class="thumb-slide" alt="CRM Sales 3" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Premium CRM & Sales (B2B)</h3>
+                        <p class="card-tech">React.js, Node.js, MySQL</p>
+                        <p class="card-desc">Aplikasi SaaS-style CRM untuk distributor B2B dengan fitur otomatisasi penawaran dan internal audit trail.</p>
+                        <button class="btn btn-link modal-trigger" data-target="modal-2">Jelajahi Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- Proyek 3 -->
+                <article class="card">
+                    <div class="card-thumbnail">
+                        <img src="img/Picture1.png" class="thumb-slide active" alt="Sandination" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sandination Profile</h3>
+                        <p class="card-tech">WordPress, Hosting Management</p>
+                        <p class="card-desc">Situs web company profile untuk akademi kepemimpinan dengan fokus pada optimalisasi UI/UX konversi.</p>
+                        <button class="btn btn-link modal-trigger" data-target="modal-3">Jelajahi Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- Proyek 4 -->
+                <article class="card">
+                    <div class="card-thumbnail thumbnail-carousel">
+                        <img src="img/Portofolio web_Ruben Setiaji.jpg" class="thumb-slide active" alt="Aplikasi Kos 1" loading="lazy">
+                        <img src="img/Picture6.png" class="thumb-slide" alt="Aplikasi Kos 2" loading="lazy">
+                        <img src="img/Picture8.png" class="thumb-slide" alt="Aplikasi Kos 3" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sistem Sewa Kos-Kosan</h3>
+                        <p class="card-tech">Laravel 7, MySQL, Bootstrap</p>
+                        <p class="card-desc">Platform manajemen properti end-to-end yang memfasilitasi pemesanan kamar dan pembukuan finansial.</p>
+                        <button class="btn btn-link modal-trigger" data-target="modal-4">Jelajahi Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Mari Berkolaborasi</h2>
+            <p class="contact-text">Mencari Web Developer atau ML Engineer? Saya selalu terbuka untuk mendiskusikan inovasi dan peluang profesional berikutnya.</p>
+            <div class="social-icons">
+                <a href="mailto:rubensetiaji04@gmail.com" target="_blank" aria-label="Kirim Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/rubensetiaji" target="_blank" aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/RubenSe04" target="_blank" aria-label="Profil GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Ruben Setiaji. Crafted with intention.</p>
+    </footer>
+
+    <!-- ================= MODALS SECTION ================= -->
+    
+    <!-- Modal 1 -->
+    <div class="modal" id="modal-1" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Tutup Modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h2>Sistem DSS Prediksi Harga Emas (AI SVR)</h2>
+                <div class="modal-meta">
+                    <span class="tag">Fullstack Developer</span>
+                    <span class="tag">ML Engineer</span>
+                </div>
+            </div>
+            <div class="modal-carousel">
+                <div class="carousel-track">
+                    <img src="img/Screenshot (1374).png" class="slide active" alt="SS 1">
+                    <img src="img/Screenshot (1375).png" class="slide" alt="SS 2">
+                    <img src="img/Screenshot (1376).png" class="slide" alt="SS 3">
+                    <img src="img/Screenshot (1377).png" class="slide" alt="SS 4">
+                    <img src="img/Screenshot (1378).png" class="slide" alt="SS 5">
+                    <img src="img/Screenshot (1379).png" class="slide" alt="SS 6">
+                </div>
+                <button class="carousel-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Aplikasi web analitik finansial tingkat enterprise yang dirancang untuk memproyeksikan harga Emas Antam (H+1) menggunakan algoritma Support Vector Regression (SVR). Mencapai akurasi R² 93%.</p>
+                <ul class="feature-list">
+                    <li>Integrasi harga pasar real-time via web scraping (BeautifulSoup/YFinance).</li>
+                    <li>Simulator Skenario "What-If" berbasis variabel makroekonomi.</li>
+                    <li>Kalkulator Profit cerdas berskema pajak PPh 22 dengan auto-save memory.</li>
+                    <li>Dasbor pelaporan dinamis dengan indikator RSI.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal-2" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Tutup Modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h2>SaaS-Style Sales CRM & Internal Control</h2>
+                <div class="modal-meta">
+                    <span class="tag">Fullstack Developer</span>
+                </div>
+            </div>
+            <div class="modal-carousel">
+                <div class="carousel-track">
+                    <img src="img/Screenshot (1380).png" class="slide active" alt="SS 1">
+                    <img src="img/Screenshot (1381).png" class="slide" alt="SS 2">
+                    <img src="img/Screenshot (1382).png" class="slide" alt="SS 3">
+                    <img src="img/Screenshot (1383).png" class="slide" alt="SS 4">
+                    <img src="img/Screenshot (1384).png" class="slide" alt="SS 5">
+                    <img src="img/Screenshot (1385).png" class="slide" alt="SS 6">
+                    <img src="img/Screenshot (1386).png" class="slide" alt="SS 7">
+                    <img src="img/Screenshot (1387).png" class="slide" alt="SS 8">
+                </div>
+                <button class="carousel-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Aplikasi CRM berbasis web yang dirancang khusus untuk distributor suku cadang/B2B. Memudahkan tim sales mengelola data pelanggan, barang, dan membuat nota penawaran secara instan.</p>
+                <ul class="feature-list">
+                    <li>Pembuatan nota penawaran satu kali klik dengan integrasi WhatsApp.</li>
+                    <li>Sistem "Internal Control" dan "Audit Trail" untuk melacak riwayat aktivitas karyawan.</li>
+                    <li>Ekspor massal laporan ke Excel/PDF.</li>
+                    <li>Role-Based Access Control (RBAC) ketat untuk memisahkan wewenang Admin dan Sales.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal-3" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Tutup Modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h2>Sandination Company Profile</h2>
+                <div class="modal-meta">
+                    <span class="tag">WordPress Developer</span>
+                </div>
+            </div>
+            <div class="modal-carousel">
+                <div class="carousel-track">
+                    <img src="img/Picture1.png" class="slide active" alt="SS 1">
+                </div>
+                <button class="carousel-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Pengembangan situs web profil institusi untuk akademi kepemimpinan dan kewirausahaan pemuda.</p>
+                <ul class="feature-list">
+                    <li>Optimalisasi konversi dengan penempatan tombol call-to-action yang strategis.</li>
+                    <li>Manajemen CMS WordPress tingkat lanjut dan integrasi plugin.</li>
+                    <li>Pengaturan dan pengelolaan infrastruktur Web Hosting serta DNS Domain.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal" id="modal-4" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Tutup Modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h2>Sistem Manajemen Kos-Kosan</h2>
+                <div class="modal-meta">
+                    <span class="tag">Backend Developer</span>
+                </div>
+            </div>
+            <div class="modal-carousel">
+                <div class="carousel-track">
+                    <img src="img/Portofolio web_Ruben Setiaji.jpg" class="slide active" alt="SS 1">
+                    <img src="img/Picture9.png" class="slide" alt="SS 2">
+                    <img src="img/Picture8.png" class="slide" alt="SS 3">
+                    <img src="img/Picture7.png" class="slide" alt="SS 4">
+                    <img src="img/Picture6.png" class="slide" alt="SS 5">
+                    <img src="img/Picture5.png" class="slide" alt="SS 6">
+                    <img src="img/Picture4.png" class="slide" alt="SS 7">
+                    <img src="img/Picture3.png" class="slide" alt="SS 8">
+                    <img src="img/Picture2.png" class="slide" alt="SS 9">
+                </div>
+                <button class="carousel-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Platform manajemen properti end-to-end yang memfasilitasi pencarian kamar dan pelacakan finansial.</p>
+                <ul class="feature-list">
+                    <li>Dasbor Admin komprehensif menampilkan rekapitulasi Laba/Rugi.</li>
+                    <li>Modul CRUD dinamis untuk manajemen fasilitas, tipe kamar, pengguna, dan data pengeluaran.</li>
+                    <li>Cetak Laporan Keuangan otomatis dalam format PDF dan Excel.</li>
+                    <li>Arsitektur MVC dengan autentikasi keamanan tingkat framework.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
