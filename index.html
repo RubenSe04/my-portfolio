@@ -6,11 +6,11 @@
     <meta name="description" content="Portofolio Ruben Setiaji - Web Developer & Data Analyst">
     <title>Ruben Setiaji - Portfolio</title>
     
-    <!-- Font Inter & FontAwesome -->
+    <!-- Font Inter & FontAwesome 6.5.2 (Mendukung ikon Threads) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,13 +20,19 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">Ruben<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#portfolio">Portofolio</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#portfolio">Portofolio</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <!-- Tombol Switch Theme -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Ganti Tema">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -53,7 +59,7 @@
         <div class="container">
             <h2 class="section-title">Latar Belakang</h2>
             <div class="about-content">
-                <p>Sebagai mahasiswa <strong>Teknik Informatika Universitas Tarumanagara</strong>, saya berdedikasi menciptakan solusi teknologi yang efisien dan digerakkan oleh data. Pengalaman kepemimpinan saya di Sandination Academy membuktikan kemampuan saya dalam mengoordinasikan tim teknis sekaligus membangun platform digital berskala besar (LMS).</p>
+                <p>Sebagai lulusan <strong>Teknik Informatika Universitas Tarumanagara</strong>, saya berdedikasi menciptakan solusi teknologi yang efisien dan digerakkan oleh data. Pengalaman kepemimpinan saya di Sandination Academy membuktikan kemampuan saya dalam mengoordinasikan tim teknis sekaligus membangun platform digital berskala besar (LMS).</p>
                 <p>Fokus saya adalah menjembatani pengembangan web fungsional dengan analisis data yang tajam guna mendukung keputusan bisnis yang tepat sasaran.</p>
             </div>
         </div>
@@ -160,9 +166,12 @@
             <h2 class="section-title">Mari Berkolaborasi</h2>
             <p class="contact-text">Mencari Web Developer atau ML Engineer? Saya selalu terbuka untuk mendiskusikan inovasi dan peluang profesional berikutnya.</p>
             <div class="social-icons">
-                <a href="mailto:rubensetiaji04@gmail.com" target="_blank" aria-label="Kirim Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/rubensetiaji" target="_blank" aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/RubenSe04" target="_blank" aria-label="Profil GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/6289662492219" target="_blank" aria-label="WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/rubenstjl?mdxt=cTY4cXVlY213MXB3" target="_blank" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.threads.net/@rubenns_15" target="_blank" aria-label="Threads" title="Threads"><i class="fa-brands fa-threads"></i></a>
+                <a href="mailto:rubensetiaji04@gmail.com" target="_blank" aria-label="Kirim Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/rubensetiaji" target="_blank" aria-label="Profil LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/RubenSe04" target="_blank" aria-label="Profil GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </section>
