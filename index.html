@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portofolio Ruben Setiaji - Web Developer & Data Analyst">
+    <meta name="description" content="Portofolio Ruben Setiaji - Web Developer & Certified Data Scientist (BNSP)">
     <title>Ruben Setiaji - Portfolio</title>
     
     <!-- Font Inter & FontAwesome 6.5.2 -->
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -23,12 +23,13 @@
             <div class="nav-right">
                 <ul class="nav-links">
                     <li><a href="#home">Beranda</a></li>
-                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#experience">Pengalaman</a></li>
                     <li><a href="#skills">Keahlian</a></li>
-                    <li><a href="#portfolio">Portofolio</a></li>
+                    <li><a href="#portfolio">Proyek</a></li>
+                    <li><a href="#credentials">Sertifikasi & Riset</a></li>
                     <li><a href="#contact">Kontak</a></li>
                 </ul>
-                <button id="theme-toggle" class="theme-btn" aria-label="Ganti Tema">
+                <button id="theme-toggle" class="theme-btn" type="button" aria-label="Ganti Tema">
                     <i class="fa-solid fa-sun"></i>
                 </button>
             </div>
@@ -37,44 +38,108 @@
 
     <!-- HERO SECTION -->
     <section id="home" class="hero-section">
-        <div class="container hero-grid">
-            <div class="hero-text">
-                <div class="badge">Tersedia untuk peluang baru</div>
-                <h1>Membangun sistem <span>enterprise</span> dengan data dan kode.</h1>
-                <p>Saya Ruben Setiaji. Web Developer & Data Analyst yang memadukan wawasan bisnis strategis dengan keahlian rekayasa perangkat lunak dan Machine Learning.</p>
-                
-                <!-- Tombol Aksi Utama -->
-                <div class="hero-actions">
-                    <a href="#portfolio" class="btn btn-primary">Lihat Proyek</a>
-                    <a href="CV_Ruben_Setiaji.pdf" download="CV_Ruben_Setiaji.pdf" class="btn btn-outline"><i class="fa-solid fa-file-arrow-down"></i> Unduh CV</a>
-                </div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="badge"><i class="fa-solid fa-certificate"></i> BNSP Certified Data Scientist & Fullstack Developer</div>
+                    <h1>Membangun sistem <span>enterprise</span> dengan data dan kode.</h1>
+                    <p>Saya Ruben Setiaji. Lulusan Teknik Informatika Universitas Tarumanagara yang memadukan keahlian rekayasa perangkat lunak modern dengan pemodelan Machine Learning teruji untuk mendukung keputusan bisnis strategis.</p>
+                    
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary">Jelajahi Proyek</a>
+                        <a href="CV_Ruben_Setiaji.pdf" download="CV_Ruben_Setiaji.pdf" class="btn btn-outline"><i class="fa-solid fa-file-arrow-down"></i> Unduh CV (ATS)</a>
+                    </div>
 
-                <!-- Tambahan Ikon Kontak di Bagian Atas (Hero) -->
-                <div class="hero-socials">
-                    <span class="hero-socials-label">Temukan saya di:</span>
-                    <div class="social-icons hero-social-list">
-                        <a href="https://wa.me/6289662492219" target="_blank" aria-label="WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/rubenstjl?mdxt=cTY4cXVlY213MXB3" target="_blank" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.threads.net/@rubenns_15" target="_blank" aria-label="Threads" title="Threads"><i class="fa-brands fa-threads"></i></a>
-                        <a href="mailto:rubensetiaji04@gmail.com" target="_blank" aria-label="Kirim Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="https://linkedin.com/in/rubensetiaji" target="_blank" aria-label="Profil LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/RubenSe04" target="_blank" aria-label="Profil GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <div class="hero-socials">
+                        <span class="hero-socials-label">Temukan & hubungi saya di:</span>
+                        <div class="social-icons hero-social-list">
+                            <a href="https://wa.me/6289662492219" target="_blank" aria-label="WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/rubenstjl?mdxt=cTY4cXVlY213MXB3" target="_blank" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.threads.net/@rubenns_15" target="_blank" aria-label="Threads" title="Threads"><i class="fa-brands fa-threads"></i></a>
+                            <a href="mailto:rubensetiaji04@gmail.com" target="_blank" aria-label="Kirim Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://linkedin.com/in/rubensetiaji" target="_blank" aria-label="Profil LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/RubenSe04" target="_blank" aria-label="Profil GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
+                <div class="hero-img-wrapper">
+                    <img src="img/profil.jpg" alt="Ruben Setiaji" class="hero-img">
+                </div>
             </div>
-            <div class="hero-img-wrapper">
-                <img src="img/profil.jpg" alt="Ruben Setiaji" class="hero-img">
+
+            <!-- IMPACT METRICS BAR -->
+            <div class="metrics-bar">
+                <div class="metric-item">
+                    <span class="metric-value">93.02%</span>
+                    <span class="metric-label">Akurasi Model AI SVR (R² Score)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-value">300+</span>
+                    <span class="metric-label">Pengguna Aktif Platform LMS</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-value">Grade A</span>
+                    <span class="metric-label">Skor Evaluasi Magang (484/500)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-value">SINTA 5</span>
+                    <span class="metric-label">Publikasi Jurnal Ilmiah Nasional</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about-section">
+    <!-- EXPERIENCE & EDUCATION TIMELINE -->
+    <section id="experience" class="experience-section">
         <div class="container">
-            <h2 class="section-title">Latar Belakang</h2>
-            <div class="about-content">
-                <p>Sebagai lulusan <strong>Teknik Informatika Universitas Tarumanagara</strong>, saya berdedikasi menciptakan solusi teknologi yang efisien dan digerakkan oleh data. Pengalaman kepemimpinan saya di Sandination Academy membuktikan kemampuan saya dalam mengoordinasikan tim teknis sekaligus membangun platform digital berskala besar (LMS).</p>
-                <p>Fokus saya adalah menjembatani pengembangan web fungsional dengan analisis data yang tajam guna mendukung keputusan bisnis yang tepat sasaran.</p>
+            <h2 class="section-title">Pengalaman Profesional & Akademik</h2>
+            
+            <div class="timeline">
+                <!-- Item 1: Sandination -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-role">Leader Divisi IT, Web Developer & IT Staff</h3>
+                            <p class="timeline-org">Sandination Leadership & Entrepreneurship Academy — Jakarta Selatan</p>
+                        </div>
+                        <span class="timeline-date">Feb 2025 – Feb 2026</span>
+                    </div>
+                    <p class="timeline-desc">Memimpin inisiatif infrastruktur digital dan pengembangan web secara end-to-end dengan predikat kelulusan <strong>"Excellent / Very Recommended" (Total Skor: 484 / Grade A)</strong>.</p>
+                    <ul class="timeline-list">
+                        <li>Merancang, mengembangkan, dan meluncurkan situs web <em>Company Profile</em> resmi perusahaan serta membangun platform <strong>LMS (Learning Management System)</strong> terintegrasi dari nol yang digunakan oleh 300+ peserta bootcamp.</li>
+                        <li>Mengoptimalkan manajemen basis data peserta (pemantauan progres dan rekapitulasi nilai akhir), berhasil <strong>mempercepat efisiensi pelaporan sebesar 30%</strong>.</li>
+                        <li>Bertanggung jawab penuh atas reliabilitas infrastruktur jaringan, keamanan sistem, dan dukungan teknis operasional di setiap sesi kelas dan acara besar.</li>
+                    </ul>
+                    <div class="score-badges">
+                        <span>Technical Responsiveness: <strong>98</strong></span>
+                        <span>Network Security: <strong>98</strong></span>
+                        <span>Innovative Solutions: <strong>98</strong></span>
+                        <span>Infrastructure Reliability: <strong>95</strong></span>
+                    </div>
+                    <div class="timeline-action">
+                        <a href="img/Ruben%20Setiaji_IT%20STAFF_Sandination%20Intern%20%20Certificate.pdf" target="_blank" class="btn-cert">
+                            <i class="fa-solid fa-award"></i> Lihat Sertifikat & Transkrip Nilai Magang (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 2: UNTAR -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-role">Sarjana Teknik Informatika (S.Kom)</h3>
+                            <p class="timeline-org">Universitas Tarumanagara (UNTAR) — Jakarta Barat</p>
+                        </div>
+                        <span class="timeline-date">2022 – 2026</span>
+                    </div>
+                    <p class="timeline-desc">Fokus pada Rekayasa Perangkat Lunak, Sistem Basis Data, dan Ilmu Data (Data Science).</p>
+                    <ul class="timeline-list">
+                        <li><strong>Skripsi Unggulan:</strong> Merancang <em>Decision Support System (DSS) for Gold Investment</em> menggunakan algoritma Machine Learning SVR yang divalidasi langsung oleh praktisi PT Aneka Tambang Tbk (MAPE 3.25%).</li>
+                        <li><strong>Riset Akademik:</strong> Co-author publikasi penelitian klasifikasi citra komputer (Computer Vision) menggunakan algoritma ensemble dan deep learning pada jurnal terakreditasi nasional.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -85,21 +150,21 @@
             <h2 class="section-title">Keahlian Teknis</h2>
             <div class="skills-grid">
                 <div class="skill-box">
-                    <h3><i class="fa-solid fa-code"></i> Pengembangan Web</h3>
+                    <h3><i class="fa-solid fa-code"></i> Fullstack Web Development</h3>
                     <div class="skill-tags">
-                        <span>PHP</span><span>Laravel</span><span>React.js</span><span>Node.js</span><span>Bootstrap</span><span>WordPress</span>
+                        <span>PHP</span><span>Laravel</span><span>React.js</span><span>Node.js</span><span>Express.js</span><span>JavaScript</span><span>Tailwind CSS</span><span>Bootstrap</span><span>WordPress CMS</span>
                     </div>
                 </div>
                 <div class="skill-box">
-                    <h3><i class="fa-solid fa-brain"></i> Data & Machine Learning</h3>
+                    <h3><i class="fa-solid fa-brain"></i> Data Science & Machine Learning</h3>
                     <div class="skill-tags">
-                        <span>Python</span><span>Flask</span><span>Scikit-Learn (SVR)</span><span>MySQL</span><span>K-Means Clustering</span>
+                        <span>Python</span><span>Flask</span><span>Scikit-Learn (SVR)</span><span>XGBoost & LightGBM</span><span>ResNet50 & EfficientNet</span><span>K-Means Clustering</span><span>Pandas & NumPy</span><span>Data Preprocessing</span>
                     </div>
                 </div>
                 <div class="skill-box">
-                    <h3><i class="fa-solid fa-microchip"></i> AI & Integrasi</h3>
+                    <h3><i class="fa-solid fa-server"></i> Database, DevOps & Tools</h3>
                     <div class="skill-tags">
-                        <span>AI-Assisted Development</span><span>Prompt Engineering</span><span>Code Optimization</span><span>Web Scraping</span>
+                        <span>MySQL</span><span>Database Design</span><span>Web Scraping</span><span>Linux & Containers</span><span>Git & GitHub</span><span>AI-Assisted Development</span>
                     </div>
                 </div>
             </div>
@@ -109,7 +174,7 @@
     <!-- PORTFOLIO SECTION -->
     <section id="portfolio" class="portfolio-section">
         <div class="container">
-            <h2 class="section-title">Proyek Unggulan</h2>
+            <h2 class="section-title">Studi Kasus & Proyek Unggulan</h2>
             <div class="portfolio-grid">
                 
                 <!-- Proyek 1 -->
@@ -120,10 +185,16 @@
                         <img src="img/Screenshot (1376).png" class="thumb-slide" alt="AI Gold 3" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">AI Gold Price Predictor</h3>
-                        <p class="card-tech">Python, Flask, Scikit-Learn (SVR)</p>
-                        <p class="card-desc">Sistem Pendukung Keputusan (DSS) prediksi harga emas dengan akurasi 93% dan kalkulator profit cerdas.</p>
-                        <button class="btn btn-link modal-trigger" data-target="modal-1">Jelajahi Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="card-top-meta">
+                            <span class="card-tech">Python • Flask • Scikit-Learn (SVR)</span>
+                            <a href="https://github.com/RubenSe04/Web-Sistem-Prediksi-Harga-Emas-Antam" target="_blank" class="card-repo-icon" title="Lihat Source Code di GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="card-title">AI Gold Price Predictor & DSS</h3>
+                        <p class="card-desc">Sistem Pendukung Keputusan investasi Emas Antam (H+1) berbasis multivariat makroekonomi dengan akurasi R² 93.02% dan kalkulator pajak PPh 22.</p>
+                        <div class="card-footer-actions">
+                            <button class="btn btn-link modal-trigger" data-target="modal-1">Baca Studi Kasus <i class="fa-solid fa-arrow-right"></i></button>
+                            <a href="https://github.com/RubenSe04/Web-Sistem-Prediksi-Harga-Emas-Antam" target="_blank" class="btn-source"><i class="fa-solid fa-code"></i> Kode</a>
+                        </div>
                     </div>
                 </article>
 
@@ -135,10 +206,14 @@
                         <img src="img/Screenshot (1384).png" class="thumb-slide" alt="CRM Sales 3" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Premium CRM & Sales (B2B)</h3>
-                        <p class="card-tech">React.js, Node.js, MySQL</p>
-                        <p class="card-desc">Aplikasi SaaS-style CRM untuk distributor B2B dengan fitur otomatisasi penawaran dan internal audit trail.</p>
-                        <button class="btn btn-link modal-trigger" data-target="modal-2">Jelajahi Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="card-top-meta">
+                            <span class="card-tech">React.js • Node.js • MySQL • Tailwind</span>
+                        </div>
+                        <h3 class="card-title">SaaS-Style B2B Sales CRM & Audit</h3>
+                        <p class="card-desc">Platform CRM distributor suku cadang B2B dengan otomatisasi penawaran harga (Quotation) satu klik via WhatsApp dan pelacakan Audit Trail.</p>
+                        <div class="card-footer-actions">
+                            <button class="btn btn-link modal-trigger" data-target="modal-2">Baca Studi Kasus <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </div>
                 </article>
 
@@ -148,10 +223,14 @@
                         <img src="img/Picture1.png" class="thumb-slide active" alt="Sandination" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Sandination Profile</h3>
-                        <p class="card-tech">WordPress, Hosting Management</p>
-                        <p class="card-desc">Situs web company profile untuk akademi kepemimpinan dengan fokus pada optimalisasi UI/UX konversi.</p>
-                        <button class="btn btn-link modal-trigger" data-target="modal-3">Jelajahi Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="card-top-meta">
+                            <span class="card-tech">WordPress CMS • Hosting & DNS Architecture</span>
+                        </div>
+                        <h3 class="card-title">Sandination Academy Official Portal</h3>
+                        <p class="card-desc">Pengembangan portal profil institusi dan ekosistem kepemimpinan pemuda yang dioptimalkan untuk konversi pendaftaran peserta baru.</p>
+                        <div class="card-footer-actions">
+                            <button class="btn btn-link modal-trigger" data-target="modal-3">Baca Studi Kasus <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </div>
                 </article>
 
@@ -163,12 +242,100 @@
                         <img src="img/Picture8.png" class="thumb-slide" alt="Aplikasi Kos 3" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Sistem Sewa Kos-Kosan</h3>
-                        <p class="card-tech">Laravel 7, MySQL, Bootstrap</p>
-                        <p class="card-desc">Platform manajemen properti end-to-end yang memfasilitasi pemesanan kamar dan pembukuan finansial.</p>
-                        <button class="btn btn-link modal-trigger" data-target="modal-4">Jelajahi Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="card-top-meta">
+                            <span class="card-tech">PHP • Laravel 7 • MySQL • Midtrans</span>
+                            <a href="https://github.com/RubenSe04/Project-Website-Manajemen-Penyewaan-Kos" target="_blank" class="card-repo-icon" title="Lihat Source Code di GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="card-title">Sistem Manajemen Penyewaan Kos</h3>
+                        <p class="card-desc">Aplikasi manajemen properti end-to-end yang mengintegrasikan pemesanan kamar, pelacakan laba/rugi, dan ekspor pembukuan PDF/Excel.</p>
+                        <div class="card-footer-actions">
+                            <button class="btn btn-link modal-trigger" data-target="modal-4">Baca Studi Kasus <i class="fa-solid fa-arrow-right"></i></button>
+                            <a href="https://github.com/RubenSe04/Project-Website-Manajemen-Penyewaan-Kos" target="_blank" class="btn-source"><i class="fa-solid fa-code"></i> Kode</a>
+                        </div>
                     </div>
                 </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PUBLICATIONS & CERTIFICATIONS SECTION -->
+    <section id="credentials" class="credentials-section">
+        <div class="container">
+            <h2 class="section-title">Publikasi Ilmiah & Sertifikasi</h2>
+
+            <!-- Featured Publication Card (SINTA 5) -->
+            <div class="publication-card">
+                <div class="pub-badge-col">
+                    <span class="sinta-badge"><i class="fa-solid fa-book-journal-whills"></i> Jurnal Terakreditasi SINTA 5</span>
+                    <span class="pub-year">JUITIK Vol. 6 No. 2 (2026)</span>
+                </div>
+                <div class="pub-content-col">
+                    <h3>Evaluasi Model Klasifikasi Motif Batik Lasem Menggunakan XGBoost, LightGBM, ResNet50, dan EfficientNet-B0</h3>
+                    <p>Penelitian komputasi visual (Computer Vision) yang mengevaluasi dan membandingkan performa empat arsitektur algoritma <em>Gradient Boosting</em> dan <em>Convolutional Neural Networks (CNN)</em> secara empiris untuk menentukan model klasifikasi citra terbaik.</p>
+                    <div class="pub-actions">
+                        <!-- Ganti href di bawah ini dengan link PDF/ResearchGate/Jurnal aslimu jika ingin mengarah langsung -->
+                        <a href="https://scholar.google.com/scholar?q=Evaluasi+Model+Klasifikasi+Motif+Batik+Lasem+Menggunakan+Xgboost" target="_blank" class="btn btn-outline btn-sm">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat Publikasi (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications Grid -->
+            <div class="cert-grid">
+                
+                <!-- Cert 1: BNSP -->
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">BNSP & LSP Universitas Tarumanagara • Juni 2026</span>
+                        <h4>Sertifikat Kompetensi: Ilmuwan Data (Data Scientist)</h4>
+                        <p>Kualifikasi Pengelola dan Perancang Database (No. Reg. DMI. 2644. 00441 2026). Mencakup 11 Unit Kompetensi resmi mulai dari objektif bisnis hingga evaluasi pemodelan.</p>
+                        <button class="btn-cert modal-trigger" data-target="modal-cert-bnsp">
+                            <i class="fa-solid fa-eye"></i> Lihat Bukti Sertifikat (2 Halaman)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cert 2: Sandination -->
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-medal"></i></div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">Sandination Academy • Februari 2026</span>
+                        <h4>Certificate of Appreciation — IT Staff Internship</h4>
+                        <p>Menyelesaikan program kepemimpinan teknologi selama 1 tahun penuh dengan predikat <em>Excellent</em> dan status rekomendasi tertinggi (Skor A: 484).</p>
+                        <a href="img/Ruben%20Setiaji_IT%20STAFF_Sandination%20Intern%20%20Certificate.pdf" target="_blank" class="btn-cert">
+                            <i class="fa-solid fa-file-pdf"></i> Buka Dokumen Sertifikat (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cert 3: Zenith / ASUS -->
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">Zenith Academy, UNTAR & ASUS Agres.id • Feb 2026</span>
+                        <h4>Empower Your Future with AI & Data Innovation</h4>
+                        <p>Pelatihan intensif mengenai fundamental kecerdasan buatan (AI), aplikasi praktis dunia nyata, dan pengambilan keputusan berbasis data.</p>
+                        <a href="img/sertifikat%20Asus%20%26%20Agress.pdf" target="_blank" class="btn-cert">
+                            <i class="fa-solid fa-file-pdf"></i> Buka Dokumen Sertifikat (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cert 4: Red Hat -->
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-brands fa-redhat"></i></div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">PT. Red Hat Indonesia & FTI UNTAR • Agustus 2022</span>
+                        <h4>Innovate with Linux, Container and Kubernetes</h4>
+                        <p>Sertifikasi kehadiran seminar teknologi mengenai infrastruktur sistem operasi Linux, arsitektur kontainerisasi aplikasi, dan orkestrasi Kubernetes.</p>
+                        <a href="img/sertifikat%20Red%20Hat%20Academy.pdf" target="_blank" class="btn-cert">
+                            <i class="fa-solid fa-file-pdf"></i> Buka Dokumen Sertifikat (PDF)
+                        </a>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -178,7 +345,7 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">Mari Berkolaborasi</h2>
-            <p class="contact-text">Mencari Web Developer atau ML Engineer? Saya selalu terbuka untuk mendiskusikan inovasi dan peluang profesional berikutnya.</p>
+            <p class="contact-text">Mencari Web Developer atau Data Scientist bersertifikasi yang mengerti logika bisnis? Saya siap berdiskusi untuk peluang karier maupun proyek strategis Anda.</p>
             <div class="social-icons">
                 <a href="https://wa.me/6289662492219" target="_blank" aria-label="WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://www.instagram.com/rubenstjl?mdxt=cTY4cXVlY213MXB3" target="_blank" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -191,20 +358,20 @@
     </section>
 
     <footer class="footer">
-        <p>© 2026 Ruben Setiaji. Crafted with intention.</p>
+        <p>© 2026 Ruben Setiaji. Crafted with clean architecture.</p>
     </footer>
 
-    <!-- ================= MODALS SECTION ================= -->
+    <!-- ================= MODALS SECTION (CASE STUDIES & CERTIFICATES) ================= -->
     
-    <!-- Modal 1 -->
+    <!-- Modal 1: AI Gold Predictor -->
     <div class="modal" id="modal-1" aria-hidden="true">
         <div class="modal-content">
             <button class="modal-close" aria-label="Tutup Modal"><i class="fa-solid fa-xmark"></i></button>
             <div class="modal-header">
-                <h2>Sistem DSS Prediksi Harga Emas (AI SVR)</h2>
+                <h2>Sistem DSS Prediksi Harga Emas Multivariat (AI SVR)</h2>
                 <div class="modal-meta">
                     <span class="tag">Fullstack Developer</span>
-                    <span class="tag">ML Engineer</span>
+                    <span class="tag">Machine Learning Engineer</span>
                 </div>
             </div>
             <div class="modal-carousel">
@@ -220,25 +387,38 @@
                 <button class="carousel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
             <div class="modal-body">
-                <p>Aplikasi web analitik finansial tingkat enterprise yang dirancang untuk memproyeksikan harga Emas Antam (H+1) menggunakan algoritma Support Vector Regression (SVR). Mencapai akurasi R² 93%.</p>
-                <ul class="feature-list">
-                    <li>Integrasi harga pasar real-time via web scraping (BeautifulSoup/YFinance).</li>
-                    <li>Simulator Skenario "What-If" berbasis variabel makroekonomi.</li>
-                    <li>Kalkulator Profit cerdas berskema pajak PPh 22 dengan auto-save memory.</li>
-                    <li>Dasbor pelaporan dinamis dengan indikator RSI.</li>
-                </ul>
+                <div class="case-study-grid">
+                    <div class="case-box">
+                        <h5><i class="fa-solid fa-triangle-exclamation"></i> Masalah (Problem)</h5>
+                        <p>Investor emas ritel kesulitan memproyeksikan fluktuasi harga harian Emas Antam yang dipengaruhi oleh banyak variabel makroekonomi global secara simultan.</p>
+                    </div>
+                    <div class="case-box">
+                        <h5><i class="fa-solid fa-gears"></i> Solusi (Solution)</h5>
+                        <p>Membangun DSS berbasis Flask & algoritma SVR (Kernel RBF) yang mengintegrasikan data real-time (Kurs USD/IDR, Emas Dunia, WTI, DXY) via web scraping dan YFinance API.</p>
+                    </div>
+                    <div class="case-box">
+                        <h5><i class="fa-solid fa-chart-line"></i> Dampak (Impact)</h5>
+                        <p>Mencapai akurasi R² <strong>93.02%</strong> (MAPE 3.25%), dilengkapi What-If Simulator dan Kalkulator Profit berstandar PPh 22 yang telah divalidasi praktisi PT Aneka Tambang Tbk.</p>
+                    </div>
+                </div>
+                <div class="modal-footer-links">
+                    <a href="https://github.com/RubenSe04/Web-Sistem-Prediksi-Harga-Emas-Antam" target="_blank" class="btn btn-primary">
+                        <i class="fa-brands fa-github"></i> Lihat Repository di GitHub
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 2 -->
+    <!-- Modal 2: CRM Sales -->
     <div class="modal" id="modal-2" aria-hidden="true">
         <div class="modal-content">
             <button class="modal-close" aria-label="Tutup Modal"><i class="fa-solid fa-xmark"></i></button>
             <div class="modal-header">
-                <h2>SaaS-Style Sales CRM & Internal Control</h2>
+                <h2>SaaS-Style Sales CRM & Internal Control System</h2>
                 <div class="modal-meta">
                     <span class="tag">Fullstack Developer</span>
+                    <span class="tag">React.js & Node.js</span>
                 </div>
             </div>
             <div class="modal-carousel">
@@ -256,25 +436,33 @@
                 <button class="carousel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
             <div class="modal-body">
-                <p>Aplikasi CRM berbasis web yang dirancang khusus untuk distributor suku cadang/B2B. Memudahkan tim sales mengelola data pelanggan, barang, dan membuat nota penawaran secara instan.</p>
-                <ul class="feature-list">
-                    <li>Pembuatan nota penawaran satu kali klik dengan integrasi WhatsApp.</li>
-                    <li>Sistem "Internal Control" dan "Audit Trail" untuk melacak riwayat aktivitas karyawan.</li>
-                    <li>Ekspor massal laporan ke Excel/PDF.</li>
-                    <li>Role-Based Access Control (RBAC) ketat untuk memisahkan wewenang Admin dan Sales.</li>
-                </ul>
+                <div class="case-study-grid">
+                    <div class="case-box">
+                        <h5><i class="fa-solid fa-triangle-exclamation"></i> Masalah (Problem)</h5>
+                        <p>Pembuatan nota penawaran harga (Quotation) suku cadang B2B secara manual memakan waktu lama dan rawan manipulasi data tanpa adanya jejak audit.</p>
+                    </div>
+                    <div class="case-box">
+                        <h5><i class="fa-solid fa-gears"></i> Solusi (Solution)</h5>
+                        <p>Merancang sistem CRM dengan React, Express, dan MySQL yang mendukung impor katalog Excel massal, integrasi kirim WhatsApp satu klik, dan RBAC.</p>
+                    </div>
+                    <div class="case-box">
+                        <h5><i class="fa-solid fa-chart-line"></i> Dampak (Impact)</h5>
+                        <p>Memangkas waktu pembuatan penawaran sales dan meningkatkan pengawasan manajemen melalui fitur Internal Control & Audit Trail otomatis.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 3 -->
+    <!-- Modal 3: Sandination -->
     <div class="modal" id="modal-3" aria-hidden="true">
         <div class="modal-content">
             <button class="modal-close" aria-label="Tutup Modal"><i class="fa-solid fa-xmark"></i></button>
             <div class="modal-header">
-                <h2>Sandination Company Profile</h2>
+                <h2>Sandination Company Profile & Digital Ecosystem</h2>
                 <div class="modal-meta">
                     <span class="tag">WordPress Developer</span>
+                    <span class="tag">Web Administrator</span>
                 </div>
             </div>
             <div class="modal-carousel">
@@ -285,24 +473,33 @@
                 <button class="carousel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
             <div class="modal-body">
-                <p>Pengembangan situs web profil institusi untuk akademi kepemimpinan dan kewirausahaan pemuda.</p>
-                <ul class="feature-list">
-                    <li>Optimalisasi konversi dengan penempatan tombol call-to-action yang strategis.</li>
-                    <li>Manajemen CMS WordPress tingkat lanjut dan integrasi plugin.</li>
-                    <li>Pengaturan dan pengelolaan infrastruktur Web Hosting serta DNS Domain.</li>
-                </ul>
+                <div class="case-study-grid">
+                    <div class="case-box">
+                        <h5><i class="fa-solid fa-triangle-exclamation"></i> Masalah (Problem)</h5>
+                        <p>Institusi membutuhkan portal digital resmi yang kredibel untuk menjangkau pemuda di seluruh Indonesia dan memfasilitasi pendaftaran program bootcamp.</p>
+                    </div>
+                    <div class="case-box">
+                        <h5><i class="fa-solid fa-gears"></i> Solusi (Solution)</h5>
+                        <p>Membangun portal menggunakan CMS WordPress dengan kustomisasi plugin, tata letak berfokus konversi (CTA), serta manajemen infrastruktur hosting.</p>
+                    </div>
+                    <div class="case-box">
+                        <h5><i class="fa-solid fa-chart-line"></i> Dampak (Impact)</h5>
+                        <p>Meningkatkan presensi digital organisasi secara signifikan dan terintegrasi langsung dengan ekosistem LMS yang melayani 300+ peserta aktif.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 4 -->
+    <!-- Modal 4: Sewa Kos -->
     <div class="modal" id="modal-4" aria-hidden="true">
         <div class="modal-content">
             <button class="modal-close" aria-label="Tutup Modal"><i class="fa-solid fa-xmark"></i></button>
             <div class="modal-header">
-                <h2>Sistem Manajemen Kos-Kosan</h2>
+                <h2>Sistem Informasi Manajemen Penyewaan Kos-Kosan</h2>
                 <div class="modal-meta">
-                    <span class="tag">Backend Developer</span>
+                    <span class="tag">Backend / Fullstack Developer</span>
+                    <span class="tag">PHP Laravel 7</span>
                 </div>
             </div>
             <div class="modal-carousel">
@@ -321,17 +518,54 @@
                 <button class="carousel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
             <div class="modal-body">
-                <p>Platform manajemen properti end-to-end yang memfasilitasi pencarian kamar dan pelacakan finansial.</p>
-                <ul class="feature-list">
-                    <li>Dasbor Admin komprehensif menampilkan rekapitulasi Laba/Rugi.</li>
-                    <li>Modul CRUD dinamis untuk manajemen fasilitas, tipe kamar, pengguna, dan data pengeluaran.</li>
-                    <li>Cetak Laporan Keuangan otomatis dalam format PDF dan Excel.</li>
-                    <li>Arsitektur MVC dengan autentikasi keamanan tingkat framework.</li>
-                </ul>
+                <div class="case-study-grid">
+                    <div class="case-box">
+                        <h5><i class="fa-solid fa-triangle-exclamation"></i> Masalah (Problem)</h5>
+                        <p>Pemilik kos kesulitan memantau ketersediaan kamar secara real-time, memverifikasi bukti pembayaran penyewa, dan menyusun pembukuan bulanan.</p>
+                    </div>
+                    <div class="case-box">
+                        <h5><i class="fa-solid fa-gears"></i> Solusi (Solution)</h5>
+                        <p>Mengembangkan aplikasi berbasis Laravel 7 & MySQL dengan fitur CRUD properti, verifikasi transaksi, serta modul ekspor laporan DomPDF & Maatwebsite Excel.</p>
+                    </div>
+                    <div class="case-box">
+                        <h5><i class="fa-solid fa-chart-line"></i> Dampak (Impact)</h5>
+                        <p>Menyederhanakan proses pemesanan kamar bagi pencari kos dan mengotomatisasi rekapitulasi Laba/Rugi (Pemasukan vs Pengeluaran) bagi pemilik properti.</p>
+                    </div>
+                </div>
+                <div class="modal-footer-links">
+                    <a href="https://github.com/RubenSe04/Project-Website-Manajemen-Penyewaan-Kos" target="_blank" class="btn btn-primary">
+                        <i class="fa-brands fa-github"></i> Lihat Repository di GitHub
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Modal 5: Sertifikat BNSP -->
+    <div class="modal" id="modal-cert-bnsp" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Tutup Modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h2>Sertifikat Kompetensi BNSP — Ilmuwan Data (Data Scientist)</h2>
+                <div class="modal-meta">
+                    <span class="tag">No. Reg. DMI. 2644. 00441 2026</span>
+                    <span class="tag">Berlaku s/d Juni 2029</span>
+                </div>
+            </div>
+            <div class="modal-carousel">
+                <div class="carousel-track">
+                    <img src="img/sertifikat bnsp.jpg" class="slide active" alt="Sertifikat BNSP Halaman Depan">
+                    <img src="img/sertifikat bnsp 2.jpg" class="slide" alt="Daftar Unit Kompetensi BNSP">
+                </div>
+                <button class="carousel-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Diterbitkan oleh Badan Nasional Sertifikasi Profesi (BNSP) melalui Lembaga Sertifikasi Profesi (LSP) Universitas Tarumanagara pada 22 Juni 2026. Mencakup 11 Unit Kompetensi resmi di bidang Sains Data (Data Science).</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=3"></script>
 </body>
 </html>
