@@ -2,7 +2,6 @@
    1. VARIABLES & THEME SETUP (DARK & LIGHT MODE)
    ========================================================================== */
 :root {
-    /* Default: Dark Mode */
     --bg-base: #09090b; 
     --bg-surface: #18181b; 
     --bg-navbar: rgba(9, 9, 11, 0.8);
@@ -17,7 +16,6 @@
     --radius: 8px; 
 }
 
-/* Light Mode Override */
 body.light-mode {
     --bg-base: #ffffff;
     --bg-surface: #f4f4f5;
@@ -26,7 +24,7 @@ body.light-mode {
     --border-hover: #d4d4d8;
     --text-main: #09090b;
     --text-muted: #52525b;
-    --accent: #b59226; /* Sedikit lebih gelap agar kontras di background putih */
+    --accent: #b59226;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -101,6 +99,24 @@ section { padding: 100px 0; }
 .hero-text p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 30px; max-width: 90%; }
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
+/* Tambahan Gaya untuk Ikon Kontak di Hero */
+.hero-socials {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.hero-socials-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+.hero-social-list {
+    justify-content: flex-start !important;
+}
+
 .btn {
     padding: 10px 20px; border-radius: var(--radius); font-size: 0.95rem; font-weight: 500;
     cursor: pointer; transition: var(--transition); display: inline-flex; align-items: center; gap: 8px;
@@ -166,9 +182,9 @@ section { padding: 100px 0; }
    ========================================================================== */
 .contact-section { text-align: center; }
 .contact-text { color: var(--text-muted); max-width: 600px; margin: 0 auto 30px; }
-.social-icons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
-.social-icons a { width: 45px; height: 45px; display: flex; justify-content: center; align-items: center; border: 1px solid var(--border-color); border-radius: var(--radius); color: var(--text-muted); font-size: 1.25rem; transition: var(--transition); }
-.social-icons a:hover { background: var(--bg-surface); color: var(--text-main); border-color: var(--border-hover); transform: translateY(-3px); }
+.social-icons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.social-icons a { width: 42px; height: 42px; display: flex; justify-content: center; align-items: center; border: 1px solid var(--border-color); border-radius: var(--radius); color: var(--text-muted); font-size: 1.15rem; transition: var(--transition); }
+.social-icons a:hover { background: var(--bg-surface); color: var(--accent); border-color: var(--accent); transform: translateY(-3px); }
 .footer { text-align: center; padding: 30px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.85rem; }
 
 /* ==========================================================================
@@ -204,6 +220,7 @@ section { padding: 100px 0; }
 @media (max-width: 768px) {
     .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
     .hero-actions { justify-content: center; }
+    .hero-social-list { justify-content: center !important; }
     .hero-text h1 { font-size: 2.2rem; }
     .hero-text p { margin: 0 auto 30px; }
     .nav-links { display: none; }
